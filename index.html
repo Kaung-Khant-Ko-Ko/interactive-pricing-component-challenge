@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <div class="main__text-container">
+        <p class="text__heading">Simple, traffic-based pricing</p>
+        <p class="text__desc">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+      </div>
+      <div class="main__card-container">
+        <p class="card__pageviews"><span>100</span>k Pageviews</p>
+        <p class="card__cost">$<span>16.00</span> /month</p>
+        <div class="card__slider-container">
+          <input
+            type="range"
+            name="pageviews"
+            id="pageviews"
+            min="0"
+            max="100"
+            step="25"
+            class="card__slider"
+          />
+        </div>
+        <div class="card__plan-container">
+          <p class="plan__monthly">Monthly Billing</p>
+          <label for="plan" class="plan__slider-container">
+            <input type="checkbox" id="plan" class="plan__check" />
+            <span class="plan__slider"></span>
+          </label>
+          <p class="plan__yearly">Yearly Billing</p>
+          <p class="plan__discount">25% discount</p>
+        </div>
+        <hr />
+        <div class="main__features-container">
+          <img src="./images/icon-check.svg" alt="Check icon" />
+          <p class="features__item">Unlimited websites</p>
+          <img src="./images/icon-check.svg" alt="Check icon" />
+          <p class="features__item">100% data ownership</p>
+          <img src="./images/icon-check.svg" alt="Check icon" />
+          <p class="features__item">Email reports</p>
+        </div>
+        <button type="button" class="main__button">Start my trial</button>
+      </div>
+    </main>
+  </body>
+</html>
