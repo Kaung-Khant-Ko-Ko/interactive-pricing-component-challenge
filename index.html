@@ -12,6 +12,13 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
 
     <title>Frontend Mentor | Interactive pricing component</title>
@@ -25,8 +32,13 @@
         </p>
       </div>
       <div class="main__card-container">
-        <p class="card__pageviews"><span>100</span>k Pageviews</p>
-        <p class="card__cost">$<span>16.00</span> /month</p>
+        <p class="card__pageviews">
+          <span id="pageviews_amount">100</span>k Pageviews
+        </p>
+        <p class="card__cost">
+          <span id="cost" class="cost__amount">$16.00</span
+          >&nbsp;&nbsp;/&nbsp;month
+        </p>
         <div class="card__slider-container">
           <input
             type="range"
@@ -40,9 +52,9 @@
         </div>
         <div class="card__plan-container">
           <p class="plan__monthly">Monthly Billing</p>
-          <label for="plan" class="plan__slider-container">
+          <label for="plan" class="plan__switch-container">
             <input type="checkbox" id="plan" class="plan__check" />
-            <span class="plan__slider"></span>
+            <span class="plan__switch"></span>
           </label>
           <p class="plan__yearly">Yearly Billing</p>
           <p class="plan__discount">25% discount</p>
@@ -59,5 +71,7 @@
         <button type="button" class="main__button">Start my trial</button>
       </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
